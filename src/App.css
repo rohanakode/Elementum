@@ -1,3 +1,17 @@
+
+@media (min-width: 1024px) {
+  body {
+    zoom: 0.70 !important;
+    -moz-transform: scale(0.70) !important; /* Synced to match zoom exactly */
+    -moz-transform-origin: top center !important;
+    overflow-x: hidden !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    max-width: none !important;
+    padding: 0 !important;
+  }
+}
+
 @font-face {
   font-family: "Gerbil";
   src: url("/fonts/gerbil.otf") format("opentype");
@@ -54,32 +68,29 @@ html {
   scroll-behavior: smooth;
 }
 
-
 section,
 footer {
-  scroll-margin-top: 90px; 
+  scroll-margin-top: 90px;
 }
 .App {
-  padding-top: 110px; 
+  padding-top: 110px;
 }
 
 @media (max-width: 1024px) {
   h1,
   .hero-title {
-    font-size: 48px !important; 
+    font-size: 48px !important;
   }
 
   .newsletter-title {
     font-size: 52px !important;
   }
 
-  
   .navbar-container,
   .footer-container {
     padding: 20px 40px;
   }
 }
-
 
 @media (max-width: 768px) {
   h1,
@@ -92,7 +103,6 @@ footer {
     font-size: 38px !important;
   }
 
-  
   .hero-yellow-line,
   .newsletter-arrow-left,
   .newsletter-arrow-right,
