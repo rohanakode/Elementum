@@ -1,0 +1,244 @@
+.offers-section {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  padding: 120px 0;
+  z-index: 2;
+}
+
+.offers-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.offers-header {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.offers-title {
+  font-family: "Gerbil", sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #000;
+}
+
+.highlight-pill {
+  background-color: #e2f4e9;
+  padding: 2px 24px;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+.underline-text {
+  position: relative;
+}
+
+.offers-yellow-line {
+  position: absolute;
+  background-image: url("/images/yellow-line.png");
+  width: 220px;
+  height: 30px;
+  top: 155px;
+  left: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.offers-wave {
+  position: absolute;
+  background-image: url("/images/long-red-line2.png");
+  width: 790px;
+  height: 700px;
+  top: -420px;
+  right: -140px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.offers-list {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.offers-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #e0e0e0;
+  padding: 40px 0;
+  width: 100%;
+}
+
+.offers-item:last-child {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.offers-meta {
+  width: 270px;
+  font-size: 19px;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.offers-main-title {
+  flex: 1;
+  font-family: "Gerbil", sans-serif;
+  font-size: 44px;
+  color: #000;
+  padding-left: 40px;
+  position: relative;
+}
+
+.offers-arrow {
+  width: 40px;
+  height: 1px;
+  background-color: #000;
+  position: relative;
+  margin-left: 20px;
+}
+
+.offers-arrow::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -3px;
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  transform: rotate(-45deg);
+}
+
+.offers-badge {
+  position: absolute;
+  background-image: url("/images/sticker-badge.png");
+  width: 120px;
+  height: 120px;
+  bottom: -30px;
+  left: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+
+  .offers-section {
+    padding: 10px 0 20px 0 !important; 
+    margin-top: -1200px !important; 
+    position: relative !important;
+    z-index: 5 !important; 
+  }
+
+  .offers-container {
+    padding: 0 14px !important;
+    margin-top: 0 !important;
+  }
+
+  .offers-header {
+    margin-bottom: 20px !important;
+    top: 0 !important;
+  }
+
+  .offers-container .offers-header .offers-title {
+    font-size: 20px !important;
+    line-height: 1.2 !important;
+  }
+
+  .offers-title br {
+    display: none !important; 
+  }
+
+  .offers-container .offers-header .highlight-pill {
+    padding: 1px 10px !important;
+    font-size: 20px !important;
+    line-height: inherit !important;
+  }
+
+ 
+  .offers-list {
+    margin-top: 20px !important;
+  }
+
+  
+  .offers-container .offers-list .offers-item {
+    display: flex !important;
+    flex-direction: row !important; 
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 14px 0 !important;
+    gap: 10px !important;
+  }
+
+  
+  .offers-list .offers-item .offers-meta {
+    width: 28% !important; 
+    font-size: 9px !important;
+    line-height: 1.3 !important;
+    flex-shrink: 0 !important;
+    opacity: 0.8 !important; 
+  }
+
+
+  .offers-list .offers-item .offers-main-title {
+    flex: 1 !important;
+    width: 60% !important;
+    font-size: 12px !important; 
+    line-height: 1.3 !important;
+    padding-left: 8px !important; 
+  }
+
+
+  .offers-list .offers-item .offers-arrow {
+    width: 25px !important; 
+    margin-left: 6px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .offers-arrow::after {
+    width: 5px !important;
+    height: 5px !important;
+    top: -3px !important;
+  }
+
+  
+  .offers-container .offers-header .offers-yellow-line {
+    width: 80px !important;
+    height: 12px !important;
+    top: 22px !important;
+    left: 180px !important; 
+    position: absolute !important;
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  .offers-section .offers-wave,
+  .offers-wave {
+    display: block !important;
+    position: absolute !important;
+    width: 100vw !important; 
+    height: 25vw !important; 
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    z-index: 1 !important; 
+    pointer-events: none !important; 
+    top: -30px !important; 
+    left: 220px !important;
+    opacity: 0.9 !important;
+  }
+
+  .offers-main-title .offers-badge {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+  }
+}
