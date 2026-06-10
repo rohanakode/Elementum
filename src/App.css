@@ -2,7 +2,7 @@
 @media (min-width: 1024px) {
   body {
     zoom: 0.70 !important;
-    -moz-transform: scale(0.70) !important; /* Synced to match zoom exactly */
+    -moz-transform: scale(0.70) !important; 
     -moz-transform-origin: top center !important;
     overflow-x: hidden !important;
     margin: 0 auto !important;
